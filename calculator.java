@@ -2,19 +2,31 @@ import java.util.Scanner;
 
 public class calculator{
   public static void main(String[] args){
-    //Scannerの定義を書いてください。
-
+    Scanner sc = new Scanner(System.in);
     System.out.println("plese enter the operator");
-
-    //演算子を読み取ってください。
-
+    String x = sc.next();
     System.out.println("plese enter the number");
-
-    //2つの数値を読み取ってください。
-
-    //読み取った演算子によって計算をし、出力してください。
-
+    int m = sc.nextInt();
+    int s = sc.nextInt();
+    if (x.equals("+")){
+      System.out.println(m+s);
+    } 
+    else if (x.equals("-")){
+      System.out.println(m-s);
+    } 
+    else if (x.equals("*")){
+      System.out.println(m*s);
+    } 
+    else if (x.equals("/")){
+      System.out.println(m/s);
+    } 
+    else {
+      System.out.println("坂本の口臭すぎ//");
+      System.out.println("坂本のちんこちっちゃ//加えちゃお//");
+      System.out.println("erro//");
+      System.out.println("坂本走り射ちきもちよすぎ//");  
+      System.out.println("坂本の脳真っピンク//");
+      System.out.println("藤原名前ダサｗｗ");
+    }
   }
 }
-
-//コンパイルするとき(//)の行はすべて消してください。コンパイルエラーとなります。
